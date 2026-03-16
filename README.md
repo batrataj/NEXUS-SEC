@@ -134,12 +134,11 @@ This concept demonstrates how data science insights can be integrated into a cyb
 
 ---
 
-# Demo
+## Project Demo
 
-<video width="800" controls>
+<video controls width="800">
   <source src="demo/nexus-sec-demo.mp4" type="video/mp4">
 </video>
----
 
 # Challenges Faced
 
