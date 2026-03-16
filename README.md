@@ -5,7 +5,7 @@
 ![PowerBI](https://img.shields.io/badge/PowerBI-Visualization-yellow)
 ![Status](https://img.shields.io/badge/Project-Research%20Concept-green)
 
-Cybersecurity network traffic analysis project that explores how data science techniques can detect abnormal network behavior and potential cyber threats.
+Cybersecurity network traffic analysis project exploring how data science techniques can detect abnormal network behavior and potential cyber threats.
 
 ---
 
@@ -15,6 +15,7 @@ Cybersecurity network traffic analysis project that explores how data science te
 - Project Objectives
 - Dataset
 - Data Analysis Workflow
+- Project Structure
 - Power BI Dashboard
 - NEXUS-SEC Concept
 - Demo
@@ -27,17 +28,17 @@ Cybersecurity network traffic analysis project that explores how data science te
 
 ---
 
-## Project Overview
+# Project Overview
 
 NEXUS-SEC is a cybersecurity data analysis project that explores how network traffic can be analyzed to detect abnormal activity and potential cyber threats.
 
-The project demonstrates how data science techniques can be applied to network traffic datasets in order to understand traffic behavior and identify suspicious patterns.
+The project demonstrates how data science techniques can be applied to network traffic datasets to understand network behavior and identify suspicious patterns.
 
-By analyzing packet statistics, flow duration, and traffic characteristics, the project highlights how data analysis can support cybersecurity monitoring systems.
+By analyzing packet statistics, flow duration, and traffic characteristics, the project highlights how analytical approaches can support cybersecurity monitoring systems.
 
 ---
 
-## Project Objectives
+# Project Objectives
 
 The main objectives of this project are:
 
@@ -49,9 +50,9 @@ The main objectives of this project are:
 
 ---
 
-## Dataset
+# Dataset
 
-The dataset used in this project contains network traffic information including packet statistics, flow duration, and communication features between network devices.
+The dataset used in this project contains network traffic information including packet statistics, flow duration, and communication features between devices in a network.
 
 Examples of analyzed features include:
 
@@ -62,11 +63,11 @@ Examples of analyzed features include:
 - Traffic Rates
 - Flow Byte Statistics
 
-These features help represent how communication occurs in a network and allow identification of unusual activity patterns.
+These features help represent how communication occurs in a network and allow detection of unusual traffic patterns.
 
 ---
 
-## Data Analysis Workflow
+# Data Analysis Workflow
 
 The project follows a structured data science workflow.
 
@@ -74,128 +75,119 @@ The project follows a structured data science workflow.
 
 Initial exploration was performed to understand the dataset structure and identify relevant network traffic features.
 
-This stage included:
-
-- Inspecting dataset columns
-- Understanding feature meanings
-- Checking data types
-- Exploring traffic distributions
-
 ### Data Cleaning
 
-Before analysis, the dataset required preprocessing.
-
-Cleaning steps included:
-
-- Selecting relevant columns
-- Removing unnecessary features
-- Preparing the dataset for analysis
-- Ensuring numerical values were suitable for modeling and visualization
+The dataset was prepared by selecting relevant columns and removing unnecessary features.
 
 ### Exploratory Data Analysis (EDA)
 
-Exploratory analysis was performed to understand network traffic patterns.
+Several visualizations were created to analyze traffic distribution, packet behavior, and relationships between network metrics.
 
-Visualizations were created to analyze:
-
-- Traffic distribution
-- Packet relationships
-- Flow duration patterns
-- Feature correlations
-- Network behavior characteristics
-
-These visualizations help reveal how normal traffic behaves and where anomalies may appear.
+These visualizations help reveal patterns and possible anomalies in network activity.
 
 ---
 
-## Power BI Dashboard
+# Project Structure
+
+The repository is organized into several notebooks where each notebook represents a stage of the analysis process.
+
+- [Data Overview](notebooks/1_data_overview.ipynb)  
+Initial inspection of the dataset and understanding its structure.
+
+- [Data Cleaning](notebooks/2_data_cleaning.ipynb)  
+Data preprocessing and preparation for analysis.
+
+- [Exploratory Data Analysis](notebooks/3_exploratory_analysis.ipynb)  
+Visualization and exploration of network traffic patterns.
+
+- [Feature Analysis](notebooks/4_feature_analysis.ipynb)  
+Analysis of relationships between network traffic features.
+
+- [Prediction Model](notebooks/5_prediction_model.ipynb)  
+Basic modeling experiments exploring prediction possibilities.
+
+Each notebook represents a stage in the data analysis pipeline.
+
+---
+
+# Power BI Dashboard
 
 In addition to Python analysis, an interactive dashboard was created using Power BI.
 
-The dashboard helps visualize the network traffic data and makes it easier to explore patterns.
+The dashboard helps visualize network traffic data and allows easier exploration of patterns and anomalies.
 
-The dashboard allows users to:
+The dashboard can help users:
 
-- Monitor network traffic distribution
-- Explore relationships between network metrics
-- Identify unusual behavior patterns
-- Understand network activity visually
+- Understand network traffic distribution
+- Identify abnormal behavior
+- Explore relationships between network features
 
 ---
 
-## NEXUS-SEC Concept
+# NEXUS-SEC Concept
 
-NEXUS-SEC represents a conceptual cybersecurity monitoring tool.
+NEXUS-SEC represents a conceptual cybersecurity monitoring device.
 
 The idea behind the system is to create a lightweight device capable of analyzing network traffic and detecting suspicious behavior in real time.
 
-The system concept demonstrates how analytical insights from data science can be integrated into a practical cybersecurity monitoring solution.
+This concept demonstrates how data science insights can be integrated into a cybersecurity monitoring solution.
 
 ---
 
-## Demo
+# Demo
 
-The following demonstration shows the conceptual operation of the NEXUS-SEC system.
-
-The demo illustrates how the device scans network traffic, identifies suspicious behavior, and blocks potential threats.
-
-(Demo video will be placed here)
-
+<video width="800" controls>
+  <source src="demo/nexus-sec-demo.mp4" type="video/mp4">
+</video>
 ---
 
-## Challenges Faced
+# Challenges Faced
 
 Several challenges were encountered during the development of this project.
 
-One of the main challenges was working with a large and complex network traffic dataset. Network datasets often contain many features, which requires careful selection of relevant variables for analysis.
+One challenge involved working with a large and complex network traffic dataset containing many features.
 
-Another challenge involved preparing the dataset for analysis. Some features required preprocessing and normalization to make them suitable for visualization and modeling.
+Selecting the most relevant features for analysis was necessary to simplify the analysis process.
 
-Interpreting network behavior can also be difficult because normal traffic and malicious traffic sometimes share similar characteristics.
-
-Despite these challenges, the project demonstrates how structured analysis can reveal meaningful insights from cybersecurity datasets.
+Another challenge involved preparing the dataset for visualization and modeling.
 
 ---
 
-## Project Impact
+# Project Impact
 
-This project highlights how data science techniques can support cybersecurity analysis.
+This project highlights how data science techniques can support cybersecurity monitoring.
 
-By analyzing network traffic patterns and visualizing network behavior, it becomes possible to detect anomalies that may indicate potential threats.
+By analyzing traffic patterns and visualizing network behavior, it becomes possible to detect anomalies that may indicate cyber threats.
 
-Data-driven approaches like this can help improve early threat detection and enhance network monitoring systems.
-
----
-
-## Limitations
-
-While the project demonstrates useful analytical insights, there are some limitations.
-
-The dataset represents previously recorded network traffic rather than real-time monitoring. Therefore, the analysis focuses on understanding patterns rather than actively preventing attacks.
-
-Additionally, the analysis is limited to the available dataset features.
-
-A real-world cybersecurity system would require deeper packet inspection and integration with real-time monitoring infrastructure.
+Data-driven approaches can help improve early threat detection and strengthen network security monitoring systems.
 
 ---
 
-## Future Development
+# Limitations
+
+The dataset used represents recorded network traffic rather than real-time monitoring.
+
+Therefore, the project focuses on pattern analysis rather than active threat prevention.
+
+Real cybersecurity systems would require deeper packet inspection and integration with real-time monitoring infrastructure.
+
+---
+
+# Future Development
 
 The NEXUS-SEC concept could be expanded into a more advanced cybersecurity system.
 
 Possible future improvements include:
 
-- Real-time network packet inspection
+- Real-time network traffic monitoring
 - AI-based anomaly detection
-- Integration with cybersecurity monitoring systems
+- Integration with cybersecurity monitoring platforms
 - Development of a portable network security device
 - Advanced threat visualization dashboards
 
-The goal is to transform NEXUS-SEC from a conceptual project into a practical cybersecurity monitoring tool.
-
 ---
 
-## Technologies Used
+# Technologies Used
 
 - Python
 - Pandas
@@ -208,8 +200,11 @@ The goal is to transform NEXUS-SEC from a conceptual project into a practical cy
 
 ---
 
-## Author
+# Author
 
-Rataj Alanazi  
+Rataj Alanazi
+
 Data Science Student  
-University of Hafr Al-Batin
+Interested in Cybersecurity, Data Analysis, and AI Systems  
+
+GitHub: https://github.com/batrataj
